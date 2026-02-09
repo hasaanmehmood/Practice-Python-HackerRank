@@ -1,0 +1,24 @@
+def prime_factors(n: int):
+    factors = []
+
+    # Handle factor 2 separately
+    while n % 2 == 0:
+        factors.append(2)
+        n //= 2
+
+    # Check odd numbers from 3 to sqrt(n)
+    i = 3
+    while i * i <= n:
+        while n % i == 0:
+            factors.append(i)
+            n //= i
+        i += 2
+
+    # If anything remains, it is prime
+    if n > 1:
+        factors.append(n)
+
+    return factors
+
+
+print(prime_factors(84))

@@ -1,0 +1,10 @@
+def reverse_recursive(arr, left, right):
+    if left >= right:
+        return
+
+    arr[left], arr[right] = arr[right], arr[left]
+    reverse_recursive(arr, left + 1, right - 1)
+
+a = [1, 2, 3, 4, 5]
+reverse_recursive(a, 0, 4)
+print(a)  # Output: [5, 4, 3, 2, 1]
