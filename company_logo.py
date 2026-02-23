@@ -7,7 +7,7 @@
 # Format A single line of input containing the string . Constraints 3<=len(S)<=10^4 S has at least 3 distinct characters 
 # Output Format Print the three most common characters along with their occurrence count each on a separate line. Sort 
 # output in descending order of occurrence count. If the occurrence count is the same, sort the characters in 
-# alphabetical order.
+# alphabetical order..
 
 
 from collections import Counter
