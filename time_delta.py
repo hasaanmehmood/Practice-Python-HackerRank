@@ -46,4 +46,4 @@ if __name__ == "__main__":
         for _ in range(t):
             t1 = input().strip()
             t2 = input().strip()
-            f.write(time_delta(t1, t2) + "\n")
+            f.write(time_delta(t1, t2) + "\n") #write return 
