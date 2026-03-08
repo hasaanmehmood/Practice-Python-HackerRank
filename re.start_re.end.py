@@ -16,7 +16,7 @@ def find_start_end(s: str, sub: str):
 # Example
 if __name__ == "__main__":
     s = "aaadaa"
-    sub = "aa"
+    sub = "aa"#
     find_start_end(s, sub)
     # (0, 1)
     # (1, 2)
