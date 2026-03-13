@@ -9,7 +9,7 @@ def find_start_end(s: str, sub: str):
 
     for m in matches:
         start = m.start()
-        end = start + len(sub) - 1  # HackerRank wants inclusive end
+        end = start + len(sub) - 1  # HackerRank wants inclusive end.
         print((start, end))
 
 
